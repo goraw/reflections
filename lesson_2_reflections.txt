@@ -1,4 +1,21 @@
 What happens when you initialize a repository? Why do you need to do it?
-It creates branches and mark untracked files in repo. Initlizing repro is first step to creating version control through git.
+	It creates branches and mark untracked files in repo. Initlizing repro is first step to creating version control through git.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
-Staging area is intermediate directory to stor
+	Staging area is intermediate directory to store related changes before commiting. All files in staging area are commited at once therefor it is important that
+	to make sure those changes are related. 
+How can you use the staging area to make sure you have one commit per logical change?
+	staging area serves as temporary storage to hold related changes before they are commited. If file is updated a number of times it is possible to update it in staging area
+	with out commiting it. One the changes are confirmed then all are committed in one group. 
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	To try new ideas or add new feature or different teams work on differet part of the product etc ... to achive this branches come to rescue. 
+	Branches are copies of the master branch. After thier are created they will maintain thier own history.
+How do the diagrams help you visualize the branch structure?
+	diagrams shows how branches are related to each other. Who is parent branch , who is child branch ... how each branch path to master looks like etc ...
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	The result is one merged branch containing the history of both merged branches. We represent in digrams to make sure that we are merging the right branches.
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Pro: 
+	Most of the times the conflics can be resolved automatically if they have certain patterns
+	For some delicate conflics option to resolve it manually make sure that code doesnt break;
+Con:
+	Merging changes manually is tedious and error prone , specially if the change is huge. 
